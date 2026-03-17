@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm --filter @workspace/apology-site build && mkdir -p dist && cp -rv artifacts/apology-site/dist/* dist/",
-  "outputDirectory": "dist",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": "public",
   "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
