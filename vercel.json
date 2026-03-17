@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run vercel-build",
+  "buildCommand": "pnpm --filter @workspace/apology-site build && mkdir -p dist && cp -rv artifacts/apology-site/dist/* dist/",
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
