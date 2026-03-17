@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm vercel-build",
-  "outputDirectory": "artifacts/apology-site/dist",
+  "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "framework": "vite",
   "rewrites": [
