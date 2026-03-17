@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm vercel-build",
-  "outputDirectory": "dist",
+  "outputDirectory": "public",
   "installCommand": "pnpm install",
   "framework": "vite",
   "rewrites": [
