@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm --filter @workspace/apology-site build",
-  "outputDirectory": "artifacts/apology-site/dist",
+  "buildCommand": "pnpm --filter @workspace/apology-site build && cp -r artifacts/apology-site/dist .",
+  "outputDirectory": "dist",
   "installCommand": "pnpm install --frozen-lockfile",
   "framework": null,
   "rewrites": [
