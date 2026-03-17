@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Apology Site"
+version = "1.0.0"
+id = "artifacts/apology-site"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19038
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/apology-site run dev"
+
+[services.env]
+PORT = "19038"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/apology-site", "run", "build"]
+publicDir = "artifacts/apology-site/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
