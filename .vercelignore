@@ -1,0 +1,7 @@
+# Exclude the API server — only build the frontend
+artifacts/api-server
+
+# Exclude local dev / test artifacts
+node_modules
+.git
+*.log
