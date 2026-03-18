@@ -1,6 +1,6 @@
 {
   "buildCommand": "pnpm vercel-build",
-  "outputDirectory": "dist",
+  "outputDirectory": "site_output",
   "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [

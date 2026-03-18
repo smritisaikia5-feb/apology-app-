@@ -38,7 +38,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: "dist",
+    outDir: "site_dist",
     emptyOutDir: true,
     sourcemap: false,
     minify: "esbuild",
